@@ -1,0 +1,50 @@
+/* 共通スタイル */
+body {
+    margin: 20px;
+}
+
+.item {
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* 4×4グリッド */
+.grid-4x4 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.grid-4x4 .item {
+    flex: 0 0 calc(25% - 10px);
+    box-sizing: border-box;
+}
+
+/* 2×2グリッド */
+.grid-2x2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto 40px;
+}
+
+.grid-2x2 .item {
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+/* 6×1グリッド */
+.grid-6x1 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.grid-6x1 .item {
+    flex: 1;
+}
