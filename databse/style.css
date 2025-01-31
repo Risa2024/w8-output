@@ -1,0 +1,101 @@
+/* 題名 */
+h1 {
+  position: absolute; /* 絶対配置(固定し、フォームの中央配置に影響を与えないように */
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+/* sign in to your account */
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+/* フォーム */
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 垂直方向の中央揃え */
+  min-height: 100vh;
+  background-color: #777676;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  background-color: #202938;
+  padding: 20px 60px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+/* フォームのグループ */
+.form-group {
+  margin-bottom: 30px;
+}
+/* フォームのラベル文字 */
+.form-group label {
+  display: block; /* デフォルトでは、<label>はdisplay: inline（インライン要素）として扱われるため、ブロック要素として扱うため */
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #4d4d4d;
+  border-radius: 8px;
+  background-color: #384152;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box; /* ボーダーを含めたサイズを計算 指定した幅（width）が最終的な要素の幅となる */
+}
+
+.form-group input::placeholder {
+  color: #999; /* フォームのプレースホルダーの色 */
+}
+
+/*.form-button {
+}*/
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2464eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4d7de6;
+}
+
+.signup-link {
+  text-align: left;
+  font-size: 20px;
+  margin: 30px 0 30px 0;
+  color: #9d9c9c;
+}
+
+.signup-link a {
+  color: #2464eb;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
